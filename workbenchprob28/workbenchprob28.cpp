@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -14,7 +15,7 @@ int main()
 
     pressure = force / area;
 
-    cout << "With a force of " << force << " and an area of " << area << " you have a pressure of " << pressure;
+    cout << "With a force of " << force << " and an area of " << area << " you have a pressure of " << fixed << setprecision(2) << pressure;
 
 }
 
